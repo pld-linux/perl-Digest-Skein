@@ -9,12 +9,12 @@
 Summary:	Digest::Skein - Perl interface to the Skein digest algorithm
 #Summary(pl.UTF-8):	
 Name:		perl-Digest-Skein
-Version:	0.02
+Version:	0.03
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Digest/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5e8d531b3ddf3f8e111a9e045fb24788
+# Source0-md5:	b43f9e12eab4ff6a053db67144a4f171
 URL:		http://search.cpan.org/dist/Digest-Skein/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
