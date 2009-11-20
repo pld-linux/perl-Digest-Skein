@@ -7,14 +7,14 @@
 %define	pdir	Digest
 %define	pnam	Skein
 Summary:	Digest::Skein - Perl interface to the Skein digest algorithm
-#Summary(pl.UTF-8):	
+#Summary(pl.UTF-8):
 Name:		perl-Digest-Skein
-Version:	0.03
+Version:	0.04
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Digest/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b43f9e12eab4ff6a053db67144a4f171
+# Source0-md5:	6af4a2f218cf3305c111486440d900d5
 URL:		http://search.cpan.org/dist/Digest-Skein/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -59,3 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Digest/Skein
 %attr(755,root,root) %{perl_vendorarch}/auto/Digest/Skein/*.so
 %{_mandir}/man3/*
+#it should go to static subpackage, shouldn't it?
+#%{perl_vendorarch}/auto/libskein/libskein.a
