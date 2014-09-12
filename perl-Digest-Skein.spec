@@ -58,7 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Digest/*.pm
 %dir %{perl_vendorarch}/auto/Digest/Skein
 %attr(755,root,root) %{perl_vendorarch}/auto/Digest/Skein/*.so
-%{perl_vendorarch}/auto/Digest/Skein/Skein.bs
 %{_mandir}/man3/*
 #it should go to static subpackage, shouldn't it?
 #%{perl_vendorarch}/auto/libskein/libskein.a
